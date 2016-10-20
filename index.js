@@ -1,4 +1,4 @@
-var express = ('express');
+var express = require('express');
 var server = express();
 var logger = require('./middleware/logger.js');
 var cors = require('cors');

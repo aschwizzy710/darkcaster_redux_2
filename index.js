@@ -3,9 +3,9 @@ var server = express();
 var logger = require('./middleware/logger.js');
 var cors = require('cors');
 var authorize = require('./middleware/auth.js');
+
 var forecastRouter = require('./routers/forecast.router.js');
 var indexRouter = require('./routers/index.router.js');
-
 var port = process.env.PORT || 8080;
 
 server.use(express.static(__dirname + '/public'));
